@@ -115,7 +115,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     // Sekarang Anda dapat melakukan apa yang Anda inginkan dengan data yang dikirimkan, misalnya, menyimpannya ke database atau mengirimnya melalui email.
     // Contoh: Simpan data ke database MySQL
-    $koneksi = new mysqli('localhost', 'root', '', 'raleway');
+    $koneksi = new mysqli('localhost', 'webx7276_ivan', 'ivanwahyu2813', 'webx7276_raleway');
     $query = "INSERT INTO kontak (name, email, subject, message) VALUES (?, ?, ?, ?)";
     $stmt = $koneksi->prepare($query);
     $stmt->bind_param('ssss', $name, $email, $subject, $message);
